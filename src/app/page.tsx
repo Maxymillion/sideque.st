@@ -4,11 +4,9 @@ import styles from './page.module.css'
 export default function Home() {
   return (
     <main className={styles.main}>
-
-
       <div className={styles.center}>
         <h1>Sidequest</h1>
-        <p>More information coming soon</p>
+        <p>Oops, it seems you're too early!</p>
       </div>
     </main>
   )

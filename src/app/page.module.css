@@ -14,5 +14,9 @@
 }
 
 .center h1 {
-  margin-bottom: 1rem;
+  @apply text-4xl mb-4 font-extrabold;
 }
+.center p {
+  text-align: center;
+}
+
