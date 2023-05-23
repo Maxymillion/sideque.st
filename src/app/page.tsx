@@ -6,7 +6,7 @@ export default function Home() {
     <main className={styles.main}>
       <div className={styles.center}>
         <h1>Sidequest</h1>
-        <p>Oops, it seems you're too early!</p>
+        <p>Oops, it seems you{"\'"}re too early!</p>
       </div>
     </main>
   )
