@@ -12,7 +12,7 @@
     padding: 2rem;
   }
   .center{
-    min-width: 0px;
+    min-width: auto !important;
   }
 }
 
