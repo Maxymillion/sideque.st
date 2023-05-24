@@ -11,18 +11,27 @@
   .main {
     padding: 2rem;
   }
+  .center{
+    min-width: auto;
+  }
 }
 
 .center {
   display: flex;
   flex-direction: column;
-  align-items: center;
+  min-width: 600px;
+  align-items: flex-start;
+  @apply text-base;
 }
 
 .center h1 {
   @apply text-4xl mb-4 font-extrabold;
 }
+
 .center p {
-  text-align: center;
+  max-width: 400px;
 }
 
+.logo{
+  @apply mb-4;
+}
