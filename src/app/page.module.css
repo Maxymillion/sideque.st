@@ -36,4 +36,5 @@
 
 .logo{
   @apply mb-6;
+  -webkit-user-drag: none;
 }
