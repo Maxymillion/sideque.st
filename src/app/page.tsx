@@ -9,7 +9,7 @@ export default function Home() {
               src="/sidequest_square.svg"
               alt="Sidequest Logo"
               className={styles.logo}
-              width={110}
+              width={100}
               height={33}
               priority
           />
