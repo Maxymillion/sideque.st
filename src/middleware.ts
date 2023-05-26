@@ -9,7 +9,7 @@ export function middleware(req: NextRequest) {
     const password: string = process.env.DEV_PASSWORD ?? "dev";
 
     // Enable middleware on dev or staging subdomains
-    if (!req.nextUrl.hostname.includes("dev.") || !req.nextUrl.hostname.includes("staging.")) {
+    if (!req.nextUrl.hostname.startsWith("dev.") && !req.nextUrl.hostname.startsWith("staging.")) {
         return NextResponse.next();
     }
 
