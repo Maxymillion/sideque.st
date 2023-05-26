@@ -6,10 +6,10 @@ export default function Home() {
     <main className={styles.main}>
       <div className={styles.center}>
           <Image
-              src="/sidequest.svg"
+              src="/sidequest_square.svg"
               alt="Sidequest Logo"
               className={styles.logo}
-              width={130}
+              width={110}
               height={33}
               priority
           />
