@@ -8,8 +8,8 @@ export function middleware(req: NextRequest) {
     const username: string = process.env.DEV_USERNAME ?? "dev";
     const password: string = process.env.DEV_PASSWORD ?? "dev";
 
-    //Disable basic auth locally!
-    if (process.env.NODE_ENV === "development") {
+    // Enable middleware on dev or staging subdomains
+    if (!req.nextUrl.hostname.startsWith("dev.") || !req.nextUrl.hostname.startsWith("staging.")) {
         return NextResponse.next();
     }
 
